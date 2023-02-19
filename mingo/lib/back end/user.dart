@@ -155,3 +155,5 @@ class User {
     getCarbs();
   }
 }
+
+User user = new User();
