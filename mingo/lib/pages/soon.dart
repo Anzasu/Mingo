@@ -1,13 +1,6 @@
 import 'package:flutter/material.dart';
 
-class SettingsPage extends StatefulWidget {
-  const SettingsPage({super.key});
-
-  @override
-  State<SettingsPage> createState() => SettingsState();
-}
-
-class SettingsState extends State<SettingsPage> {
+class SoonPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DecoratedBox(

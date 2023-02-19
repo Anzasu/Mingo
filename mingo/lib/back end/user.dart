@@ -156,4 +156,4 @@ class User {
   }
 }
 
-User user = new User();
+User user = User();
