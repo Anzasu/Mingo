@@ -81,7 +81,15 @@
    Calories: maxCal = daily calorie consumption
    Proteins: proteins = 2 * weight
    Fats: fats = 1 * weight
-   Carbs: carbs = maxCal - protein - fats
+   Carbs: carbs = (maxCal - protein*4.1 - fats*9.3)/4.1
+
+   Reason for these values:
+    1g fat = 9.3 kcal
+    1g proteins = 4.1 kcal
+    1g carbs = 4.1 kcal
+    
+    We multiple the gramms of protein and fat with the factors to change them into kcal and in the end we divide all by 4.1 to get the values in gramms
+
 */
 
 class User {
@@ -118,7 +126,7 @@ class User {
   }
 
   void getProteins() {
-    if (goal == "Build Muscles") {
+    if (goal == "Build muscles") {
       proteins = 2 * weight;
     } else {
       if (age < 19 || age > 64) {
@@ -127,6 +135,8 @@ class User {
         proteins = 0.8 * weight;
       }
     }
+    proteins = double.parse(proteins.toStringAsFixed(
+        1)); //Rounds the result to 1 decimal place (same for the other methods)
   }
 
   void getFats() {
@@ -141,10 +151,13 @@ class User {
     } else {
       fats = 1 * weight;
     }
+
+    fats = double.parse(fats.toStringAsFixed(1));
   }
 
   void getCarbs() {
-    carbs = calories - proteins - fats;
+    carbs = (calories - proteins * 4.1 - fats * 9.3) / 4.1;
+    carbs = double.parse(carbs.toStringAsFixed(1));
   }
 
   void calculateQuantities() {
