@@ -25,7 +25,7 @@ class Homepage extends StatelessWidget {
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: lightWidget, fixedSize: Size(140, 60)),
+                    backgroundColor: lightWidget, fixedSize: Size(160, 60)),
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -34,7 +34,7 @@ class Homepage extends StatelessWidget {
                 },
                 child: Text(
                   "Journal",
-                  style: GoogleFonts.playfairDisplay(fontSize: 29, color: text),
+                  style: GoogleFonts.montserrat(fontSize: 29, color: text),
                 ),
               ), // Journal
             ],
@@ -49,7 +49,7 @@ class Homepage extends StatelessWidget {
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: lightWidget, fixedSize: Size(220, 60)),
+                    backgroundColor: lightWidget, fixedSize: Size(230, 60)),
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -58,7 +58,7 @@ class Homepage extends StatelessWidget {
                 },
                 child: Text(
                   "Mood Tracker",
-                  style: GoogleFonts.playfairDisplay(fontSize: 29, color: text),
+                  style: GoogleFonts.montserrat(fontSize: 29, color: text),
                 ),
               ), // Mood Tracker
             ],
@@ -82,7 +82,7 @@ class Homepage extends StatelessWidget {
                 },
                 child: Text(
                   "Daily Essentials",
-                  style: GoogleFonts.playfairDisplay(fontSize: 29, color: text),
+                  style: GoogleFonts.montserrat(fontSize: 29, color: text),
                 ),
               ), // Essentials
             ],
@@ -106,7 +106,7 @@ class Homepage extends StatelessWidget {
                 },
                 child: Text(
                   "Recipes",
-                  style: GoogleFonts.playfairDisplay(fontSize: 29, color: text),
+                  style: GoogleFonts.montserrat(fontSize: 29, color: text),
                 ),
               ), // Recipes
             ],
@@ -130,7 +130,7 @@ class Homepage extends StatelessWidget {
                 },
                 child: Text(
                   "Settings",
-                  style: GoogleFonts.playfairDisplay(fontSize: 29, color: text),
+                  style: GoogleFonts.montserrat(fontSize: 29, color: text),
                 ),
               ), // Settings
             ],

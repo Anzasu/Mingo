@@ -60,7 +60,7 @@ class EssentialsState extends State<EssentialsPage> {
                 padding: const EdgeInsets.all(20),
                 child: Text(
                   "Daily Essentials",
-                  style: GoogleFonts.playfairDisplay(fontSize: 29, color: text),
+                  style: GoogleFonts.montserrat(fontSize: 29, color: text),
                 ),
               ),
             ),
@@ -68,14 +68,57 @@ class EssentialsState extends State<EssentialsPage> {
               height: 40,
             ),
             Card(
-              color: darkWidget,
+              color: lightWidget,
               child: Padding(
                 padding: const EdgeInsets.all(20),
                 child: Text(
                   "To reach your goal, consume the following amounts daily. \n(If you have changed your data in the settings or if a new day has started, click on the refresh button)",
-                  style: GoogleFonts.playfairDisplay(fontSize: 22, color: text),
+                  style: GoogleFonts.montserrat(fontSize: 22, color: text),
                 ),
               ),
+            ),
+            SizedBox(
+              height: 40,
+            ),
+            Row(
+              children: [
+                SizedBox(
+                  width: 20,
+                ),
+                ElevatedButton.icon(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: darkWidget, fixedSize: Size(150, 60)),
+                  icon: Icon(Icons.refresh, size: 30, color: text),
+                  label: Text(
+                    "Refresh",
+                    style: GoogleFonts.montserrat(fontSize: 20, color: text),
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => EssentialsPage()),
+                    );
+                  },
+                ),
+                SizedBox(
+                  width: 30,
+                ),
+                ElevatedButton.icon(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: darkWidget, fixedSize: Size(150, 60)),
+                  icon: Icon(Icons.arrow_back, size: 30, color: text),
+                  label: Text(
+                    "Back to home",
+                    style: GoogleFonts.montserrat(fontSize: 20, color: text),
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Homepage()),
+                    );
+                  },
+                ),
+              ],
             ),
             SizedBox(
               height: 40,
@@ -98,7 +141,7 @@ class EssentialsState extends State<EssentialsPage> {
                 icon: waterIcon,
                 label: Text(
                   "2-3 liters of water or sugar free drinks \n(e.g. sugar free tea)",
-                  style: GoogleFonts.playfairDisplay(fontSize: 25, color: text),
+                  style: GoogleFonts.montserrat(fontSize: 25, color: text),
                 ),
               ),
             ]),
@@ -123,7 +166,7 @@ class EssentialsState extends State<EssentialsPage> {
                 icon: fruVegIcon,
                 label: Text(
                   "5 portions of fruits and vegetables \n(e.g. berries and carrots)",
-                  style: GoogleFonts.playfairDisplay(fontSize: 25, color: text),
+                  style: GoogleFonts.montserrat(fontSize: 25, color: text),
                 ),
               ),
             ]),
@@ -149,7 +192,7 @@ class EssentialsState extends State<EssentialsPage> {
                 label: Text(
                   user.proteins.toString() +
                       " g of healthy proteins \n(e.g. fish, egg)",
-                  style: GoogleFonts.playfairDisplay(fontSize: 25, color: text),
+                  style: GoogleFonts.montserrat(fontSize: 25, color: text),
                 ),
               ),
             ]),
@@ -175,7 +218,7 @@ class EssentialsState extends State<EssentialsPage> {
                 label: Text(
                   user.carbs.toString() +
                       " g of healthy carbs \n(e.g. oat, whole grain bread)",
-                  style: GoogleFonts.playfairDisplay(fontSize: 25, color: text),
+                  style: GoogleFonts.montserrat(fontSize: 25, color: text),
                 ),
               ),
             ]),
@@ -201,58 +244,13 @@ class EssentialsState extends State<EssentialsPage> {
                 label: Text(
                   user.fats.toString() +
                       " g of healthy fats \n(e.g. cheese, yoghurt, avocado)",
-                  style: GoogleFonts.playfairDisplay(fontSize: 25, color: text),
+                  style: GoogleFonts.montserrat(fontSize: 25, color: text),
                 ),
               ),
             ]),
             SizedBox(
               height: 30,
             ),
-            Row(
-              children: [
-                SizedBox(
-                  width: 20,
-                ),
-                ElevatedButton.icon(
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: darkWidget, fixedSize: Size(150, 60)),
-                  icon: Icon(Icons.refresh, size: 30, color: text),
-                  label: Text(
-                    "Refresh",
-                    style:
-                        GoogleFonts.playfairDisplay(fontSize: 20, color: text),
-                  ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => EssentialsPage()),
-                    );
-                  },
-                ),
-                SizedBox(
-                  width: 30,
-                ),
-                ElevatedButton.icon(
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: darkWidget, fixedSize: Size(150, 60)),
-                  icon: Icon(Icons.arrow_back, size: 30, color: text),
-                  label: Text(
-                    "Back to home",
-                    style:
-                        GoogleFonts.playfairDisplay(fontSize: 20, color: text),
-                  ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Homepage()),
-                    );
-                  },
-                ),
-              ],
-            ),
-            SizedBox(
-              height: 40,
-            )
           ],
         ),
       ),

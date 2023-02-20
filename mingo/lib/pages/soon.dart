@@ -16,18 +16,23 @@ class SoonPage extends StatelessWidget {
           SizedBox(
             height: 400,
           ),
-          ElevatedButton(
+          ElevatedButton.icon(
             style: ElevatedButton.styleFrom(
-                backgroundColor: lightWidget, fixedSize: Size(250, 120)),
+                backgroundColor: lightWidget, fixedSize: Size(260, 130)),
             onPressed: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => Homepage()),
               );
             },
-            child: Text(
+            label: Text(
               "Coming soon! Stay tuned!",
-              style: GoogleFonts.playfairDisplay(fontSize: 29, color: text),
+              style: GoogleFonts.montserrat(fontSize: 29, color: text),
+            ),
+            icon: Icon(
+              Icons.arrow_back,
+              size: 30,
+              color: text,
             ),
           ),
         ],

@@ -40,8 +40,7 @@ class SettingsState extends State<SettingsPage> {
                   padding: const EdgeInsets.all(20),
                   child: Text(
                     "Settings",
-                    style:
-                        GoogleFonts.playfairDisplay(fontSize: 29, color: text),
+                    style: GoogleFonts.montserrat(fontSize: 29, color: text),
                   ),
                 ),
               ),
@@ -54,8 +53,7 @@ class SettingsState extends State<SettingsPage> {
                   padding: const EdgeInsets.all(10),
                   child: Text(
                     "Weight in kg (choose the value \nclosest to your actual weight )",
-                    style:
-                        GoogleFonts.playfairDisplay(fontSize: 22, color: text),
+                    style: GoogleFonts.montserrat(fontSize: 22, color: text),
                   ),
                 ),
               ),
@@ -75,7 +73,7 @@ class SettingsState extends State<SettingsPage> {
                           value: i,
                           child: Text(
                             i.toString(),
-                            style: GoogleFonts.playfairDisplay(
+                            style: GoogleFonts.montserrat(
                                 fontSize: 22, color: altText),
                           ),
                         ),
@@ -98,8 +96,7 @@ class SettingsState extends State<SettingsPage> {
                   padding: const EdgeInsets.all(10),
                   child: Text(
                     "Age (in years)",
-                    style:
-                        GoogleFonts.playfairDisplay(fontSize: 22, color: text),
+                    style: GoogleFonts.montserrat(fontSize: 22, color: text),
                   ),
                 ),
               ),
@@ -178,7 +175,7 @@ class SettingsState extends State<SettingsPage> {
                         value: value,
                         child: Text(
                           value.toString(),
-                          style: GoogleFonts.playfairDisplay(
+                          style: GoogleFonts.montserrat(
                               fontSize: 22, color: altText),
                         ),
                       );
@@ -200,8 +197,7 @@ class SettingsState extends State<SettingsPage> {
                   padding: const EdgeInsets.all(10),
                   child: Text(
                     "Gender",
-                    style:
-                        GoogleFonts.playfairDisplay(fontSize: 22, color: text),
+                    style: GoogleFonts.montserrat(fontSize: 22, color: text),
                   ),
                 ),
               ),
@@ -225,7 +221,7 @@ class SettingsState extends State<SettingsPage> {
                         value: value,
                         child: Text(
                           value,
-                          style: GoogleFonts.playfairDisplay(
+                          style: GoogleFonts.montserrat(
                               fontSize: 22, color: altText),
                         ),
                       );
@@ -243,7 +239,7 @@ class SettingsState extends State<SettingsPage> {
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: lightWidget, fixedSize: Size(350, 60)),
+                    backgroundColor: lightWidget, fixedSize: Size(350, 90)),
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -252,7 +248,7 @@ class SettingsState extends State<SettingsPage> {
                 },
                 child: Text(
                   "PAL value (Click to determine \nsuitable value)",
-                  style: GoogleFonts.playfairDisplay(fontSize: 22, color: text),
+                  style: GoogleFonts.montserrat(fontSize: 22, color: text),
                 ),
               ),
               SizedBox(
@@ -271,7 +267,7 @@ class SettingsState extends State<SettingsPage> {
                         value: value,
                         child: Text(
                           value.toString(),
-                          style: GoogleFonts.playfairDisplay(
+                          style: GoogleFonts.montserrat(
                               fontSize: 22, color: altText),
                         ),
                       );
@@ -293,8 +289,7 @@ class SettingsState extends State<SettingsPage> {
                   padding: const EdgeInsets.all(10),
                   child: Text(
                     "Goal",
-                    style:
-                        GoogleFonts.playfairDisplay(fontSize: 22, color: text),
+                    style: GoogleFonts.montserrat(fontSize: 22, color: text),
                   ),
                 ),
               ),
@@ -321,7 +316,7 @@ class SettingsState extends State<SettingsPage> {
                         value: value,
                         child: Text(
                           value,
-                          style: GoogleFonts.playfairDisplay(
+                          style: GoogleFonts.montserrat(
                               fontSize: 22, color: altText),
                         ),
                       );
@@ -361,7 +356,7 @@ class SettingsState extends State<SettingsPage> {
                 ),
                 label: Text(
                   "Save and go back",
-                  style: GoogleFonts.playfairDisplay(fontSize: 22, color: text),
+                  style: GoogleFonts.montserrat(fontSize: 22, color: text),
                 ),
               ),
               SizedBox(

@@ -23,8 +23,7 @@ class PALValuesPage extends StatelessWidget {
                   padding: const EdgeInsets.all(5),
                   child: Text(
                     "  PAL = Physical Activity Level \n  For regular physical activity (e.g. \n  30-60 minutes of exercise/day), you \n  can add 0.3 PAL units to your value. ",
-                    style:
-                        GoogleFonts.playfairDisplay(fontSize: 22, color: text),
+                    style: GoogleFonts.montserrat(fontSize: 22, color: text),
                   ),
                 )),
             SizedBox(
@@ -46,7 +45,7 @@ class PALValuesPage extends StatelessWidget {
               ),
               label: Text(
                 "Back to Settings",
-                style: GoogleFonts.playfairDisplay(fontSize: 22, color: text),
+                style: GoogleFonts.montserrat(fontSize: 22, color: text),
               ),
             ),
             SizedBox(
@@ -62,15 +61,15 @@ class PALValuesPage extends StatelessWidget {
                       DataColumn(
                         label: Text(
                           "Value",
-                          style: GoogleFonts.playfairDisplay(
-                              fontSize: 22, color: text),
+                          style:
+                              GoogleFonts.montserrat(fontSize: 22, color: text),
                         ),
                       ),
                       DataColumn(
                         label: Text(
                           "Description",
-                          style: GoogleFonts.playfairDisplay(
-                              fontSize: 22, color: text),
+                          style:
+                              GoogleFonts.montserrat(fontSize: 22, color: text),
                         ),
                       )
                     ],
@@ -79,12 +78,12 @@ class PALValuesPage extends StatelessWidget {
                         cells: <DataCell>[
                           DataCell(Text(
                             "1.2",
-                            style: GoogleFonts.playfairDisplay(
+                            style: GoogleFonts.montserrat(
                                 fontSize: 22, color: text),
                           )),
                           DataCell(Text(
                             "Exclusively sedentary or lying lifestyle",
-                            style: GoogleFonts.playfairDisplay(
+                            style: GoogleFonts.montserrat(
                                 fontSize: 20, color: text),
                           )),
                         ],
@@ -93,12 +92,12 @@ class PALValuesPage extends StatelessWidget {
                         cells: <DataCell>[
                           DataCell(Text(
                             "1.4",
-                            style: GoogleFonts.playfairDisplay(
+                            style: GoogleFonts.montserrat(
                                 fontSize: 22, color: text),
                           )),
                           DataCell(Text(
                             "Exclusively sedentary job with little or no strenuous leisure activity",
-                            style: GoogleFonts.playfairDisplay(
+                            style: GoogleFonts.montserrat(
                                 fontSize: 20, color: text),
                           )),
                         ],
@@ -107,12 +106,12 @@ class PALValuesPage extends StatelessWidget {
                         cells: <DataCell>[
                           DataCell(Text(
                             "1.6",
-                            style: GoogleFonts.playfairDisplay(
+                            style: GoogleFonts.montserrat(
                                 fontSize: 22, color: text),
                           )),
                           DataCell(Text(
                             "Sedentary work, at times also additional energy expenditure for walking or standing activity",
-                            style: GoogleFonts.playfairDisplay(
+                            style: GoogleFonts.montserrat(
                                 fontSize: 20, color: text),
                           )),
                         ],
@@ -121,12 +120,12 @@ class PALValuesPage extends StatelessWidget {
                         cells: <DataCell>[
                           DataCell(Text(
                             "1.8",
-                            style: GoogleFonts.playfairDisplay(
+                            style: GoogleFonts.montserrat(
                                 fontSize: 22, color: text),
                           )),
                           DataCell(Text(
                             "Predominantly walking and standing work",
-                            style: GoogleFonts.playfairDisplay(
+                            style: GoogleFonts.montserrat(
                                 fontSize: 20, color: text),
                           )),
                         ],
@@ -135,12 +134,12 @@ class PALValuesPage extends StatelessWidget {
                         cells: <DataCell>[
                           DataCell(Text(
                             "2.0",
-                            style: GoogleFonts.playfairDisplay(
+                            style: GoogleFonts.montserrat(
                                 fontSize: 22, color: text),
                           )),
                           DataCell(Text(
                             "Physically demanding professional work",
-                            style: GoogleFonts.playfairDisplay(
+                            style: GoogleFonts.montserrat(
                                 fontSize: 20, color: text),
                           )),
                         ],
