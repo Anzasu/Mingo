@@ -15,7 +15,7 @@ class SettingsState extends State<SettingsPage> {
   double _weight = 90.0;
   String _gender = "Female";
   int _age = 20;
-  double _palValue = 0;
+  double _palValue = 1.6;
   String _goal = "Maintain weight";
 
   @override
